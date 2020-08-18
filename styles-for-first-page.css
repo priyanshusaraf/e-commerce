@@ -1,0 +1,13 @@
+body {
+    font-size: 32px;
+    font-family: sans-serif;
+    background: linear-gradient(to left, white, whitesmoke);
+
+}
+header{
+    height:100px;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    background: #353333;
+    
+}

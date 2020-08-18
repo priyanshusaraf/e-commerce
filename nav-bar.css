@@ -1,0 +1,22 @@
+
+.nav{
+    height: 80px;
+    background: rgb(24, 19, 19);
+
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    width: 50%;
+    margin-left: auto;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-links li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+

@@ -1,0 +1,71 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vhs_project</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="nav-bar.css">
+    <link rel="stylesheet" href="loading-screen.css">
+    <script src="app.js"></script>
+    
+    <script>
+      window.onload = function(){
+        setTimeout(function(){
+          document.getElementById("loader-wrapper").style.display = 'none';
+          document.getElementsByTagName("body").style.display = 'block';
+        }, 2000);
+      }
+      function machinePage(){
+        document.getElementById("phone").onclick = location.replace('./washing-machine-page.html');
+      }
+      function phonePage(){
+        document.getElementById("phone").onclick = location.replace('./phone-page.html');
+      }
+      function cameraPage(){
+        document.getElementById("phone").onclick = location.replace('./camera-page.html');
+      }
+      </script>
+  </head>
+  <body>
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+ 
+    </div>
+    <div id="f1">
+      <nav class = "nav">
+        <ul class = "nav-links">
+          <li><a href="index.html">home</a></li>
+          <li><a href="form-page-1.html">sign up</a></li>
+        </ul>
+      </nav>
+      <div class="main-pics">
+        <img src="images\fridge1.jpg" />
+        
+        <div class="offers">
+          <p class="offer">get upto flat 50% off on refrigirators!<br /></p>
+          <p class="old">old price -</p><p class="price">₹50000</p>
+          <p class = "new">₹25000</p>
+          
+        </div>
+      </div>
+      <hr />
+      <div class="boxes">
+        <div class="box">
+          <p class="box-pics">washing machine</p>
+          <img src="images\washing-machine2.jpg" id = "washing-machine" onclick = "machinePage()"/>
+        </div>
+        <div class="box2"  onclick = "phonePage()" >
+          <p class="box-pics">iphone 11</p>
+          <img src="images\phone.png" id = "phone">
+        </div>
+        <div class="box3">
+          <p class="box-pics">camera</p>
+          <img src="images\camera-2.jpg" id = "camera" onclick = "cameraPage()">
+          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
